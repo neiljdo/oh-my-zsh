@@ -29,8 +29,13 @@ ZSH_THEME_GIT_PROMPT_PREFIX=" on %B%{$FG[118]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$reset_color%}"
 
 # see .oh-my-zsh/lib/git.zsh for the rest of the variables that you can set
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$FG[081]%}!"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$FG[081]%}?"
+ZSH_THEME_GIT_PROMPT_ADDED="%{$FG[081]%}%B✚%b%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_MODIFIED="%{$FG[081]%}%B✹%b%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DELETED="%{$FG[081]%}%B✖%b%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_RENAMED="%{$FG[081]%}%B➜%b%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNMERGED="%{$FG[081]%}%B═%b%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$FG[081]%}%B!%b%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$FG[081]%}%B?%b%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 local return_status="%B%{$FG[001]%}%(?..✘)%b%{$reset_color%}"
