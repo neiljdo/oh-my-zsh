@@ -1,4 +1,4 @@
-xvirtualenvwrapper='virtualenvwrapper.sh'
+virtualenvwrapper='virtualenvwrapper.sh'
 if (( $+commands[$virtualenvwrapper] )); then
   source ${${virtualenvwrapper}:c}
 
