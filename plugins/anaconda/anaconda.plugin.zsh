@@ -7,6 +7,7 @@ declare -U pythonpath
 # From http://earthwithsun.com/questions/598810/zsh-config-to-export-or-not-to-export
 function update_pythonpath() {
     pythonpath=($ANACONDA_ADDITIONAL_PATHS $pythonpath)
+    export PYTHONPATH
 }
 
 function cnsa() {
