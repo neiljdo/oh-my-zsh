@@ -1,6 +1,8 @@
 # Append Anaconda install location to path
 export PATH=$HOME/$ANACONDA/bin:$PATH
 
+unset PYTHONPATH pythonpath
+declare -T PYTHONPATH pythonpath
 declare -U pythonpath
 
 # Append additional paths to PYTHONPATH
@@ -14,8 +16,12 @@ function cnsa() {
     source activate "$1" && update_pythonpath
 }
 
+function cnsd() {
+    source deactivate && unset PYTHONPATH pythonpath
+}
+
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 
 # Aliases
 alias cn.sa='cnsa'
-alias cn.sd='source deactivate'
+alias cn.sd='cnsd'
