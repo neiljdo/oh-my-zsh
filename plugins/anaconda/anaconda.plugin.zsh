@@ -25,3 +25,4 @@ VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 # Aliases
 alias cn.sa='cnsa'
 alias cn.sd='cnsd'
+alias cn.le='conda info -e'
