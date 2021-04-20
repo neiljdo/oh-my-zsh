@@ -1,3 +1,12 @@
-[submodule "/Users/no186007/.oh-my-zsh/custom/themes/spaceship-prompt"]
-	path = /Users/no186007/.oh-my-zsh/custom/themes/spaceship-prompt
+[submodule "custom/themes/spaceship-prompt"]
+	path = custom/themes/spaceship-prompt
 	url = https://github.com/denysdovhan/spaceship-prompt.git
+[submodule "plugins/zsh-syntax-highlighting"]
+	path = plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "plugins/zsh-autosuggestions"]
+	path = plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "plugins/zsh-completions"]
+	path = plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
